@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
+import SearchBar from '../components/search_bar';
 
 // export default 
 class App extends Component {
@@ -12,10 +13,15 @@ class App extends Component {
     };
   }
 
+  articleSearch(term) {
+
+  }
+
   render() {
     return (
       <div>
-        Hello from react
+        <h1>This is from the App.js render</h1>
+        <SearchBar onSearchTermChange={this.articleSearch}/>
       </div>
     );
   }
